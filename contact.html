@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Dedhare &amp; Works</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page--contact">
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span>Dedhare &amp; Works</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--primary" href="#" data-link="kofi">Shop on Ko-fi</a>
+        <button class="hamburger" type="button" data-drawer-toggle aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="sr-only">Toggle navigation</span>
+          <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="mobile-drawer" data-drawer tabindex="-1">
+    <div class="drawer__header">
+      <button class="hamburger" type="button" data-drawer-close>
+        <span class="sr-only">Close menu</span>
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-close"></use></svg>
+      </button>
+    </div>
+    <nav class="drawer__nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="drawer__footer">
+      <a class="btn btn--primary" href="#" data-link="kofi">Shop on Ko-fi</a>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="return-wrapper">
+      <a class="btn btn--return" href="index.html" data-return><svg class="icon icon--primary" aria-hidden="true"><use href="icons.svg#icon-arrow-left"></use></svg> Return</a>
+    </div>
+
+    <section class="section">
+      <h1 class="section__title">Reach out anytime</h1>
+      <p>Need an update on drops, want a custom commission, or ready to collaborate? Choose a channel that’s easiest for you.</p>
+      <div class="quick-links">
+        <a class="quick-link" href="#" data-link="messenger">
+          <span class="quick-link__icon">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-messenger"></use></svg>
+          </span>
+          <span class="quick-link__content">
+            <span class="quick-link__title">Messenger</span>
+            <span class="quick-link__meta">Fastest reply · Usually within minutes</span>
+          </span>
+        </a>
+        <a class="quick-link" href="#" data-link="phone">
+          <span class="quick-link__icon">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-phone"></use></svg>
+          </span>
+          <span class="quick-link__content">
+            <span class="quick-link__title">Call / Text</span>
+            <span class="quick-link__meta">0950 429 3383</span>
+          </span>
+        </a>
+        <a class="quick-link" href="#" data-link="email">
+          <span class="quick-link__icon">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-mail"></use></svg>
+          </span>
+          <span class="quick-link__content">
+            <span class="quick-link__title">Email</span>
+            <span class="quick-link__meta">riegardner0@gmail.com</span>
+          </span>
+        </a>
+        <a class="quick-link" href="#" data-link="facebook">
+          <span class="quick-link__icon">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-facebook"></use></svg>
+          </span>
+          <span class="quick-link__content">
+            <span class="quick-link__title">Facebook Page</span>
+            <span class="quick-link__meta">Opens in new tab</span>
+          </span>
+        </a>
+      </div>
+      <div class="section__actions">
+        <a class="btn btn--primary" href="#" data-link="kofi">Shop on Ko-fi</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Send a note</h2>
+      <form class="form" data-contact-form>
+        <div class="form__group">
+          <label class="form__label" for="contact-name">Name</label>
+          <input class="form__input" type="text" id="contact-name" name="name" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="contact-email">Email</label>
+          <input class="form__input" type="email" id="contact-email" name="email" required />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="contact-topic">How can we help?</label>
+          <select class="form__select" id="contact-topic" name="topic">
+            <option value="">Select an option</option>
+            <option value="drop-updates">Drop updates</option>
+            <option value="commission">Custom commission</option>
+            <option value="bulk">Bulk or gift orders</option>
+            <option value="collab">Collaboration</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="contact-message">Message</label>
+          <textarea class="form__textarea" id="contact-message" name="message" required></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">Send message</button>
+      </form>
+      <div class="section__actions">
+        <a class="btn btn--secondary" href="services.html">See Services</a>
+      </div>
+    </section>
+
+    <div class="return-wrapper">
+      <a class="btn btn--return" href="index.html" data-return><svg class="icon icon--primary" aria-hidden="true"><use href="icons.svg#icon-arrow-left"></use></svg> Return</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#" data-modal-target="modal-privacy">Privacy Policy</a>
+        <a href="#" data-modal-target="modal-terms">Terms of Service</a>
+        <a href="#" data-modal-target="modal-returns">Returns (Handmade)</a>
+      </nav>
+      <p class="footer__meta">© Dedhare &amp; Works · Banga, Aklan.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+    <div class="modal__dialog">
+      <button class="modal__close" data-modal-close>
+        <span class="sr-only">Close</span>
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-close"></use></svg>
+      </button>
+      <h2 id="modal-privacy-title">Privacy Policy</h2>
+      <p>We only collect contact details you share with us for the purpose of responding to inquiries and fulfilling orders. We will never sell or share your information without consent.</p>
+      <p>By messaging or ordering, you agree to let us email or message you about your purchase and related updates. You can request deletion anytime.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-terms" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+    <div class="modal__dialog">
+      <button class="modal__close" data-modal-close>
+        <span class="sr-only">Close</span>
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-close"></use></svg>
+      </button>
+      <h2 id="modal-terms-title">Terms of Service</h2>
+      <p>All artworks are handmade and may include small imperfections. Payment is required upfront via Ko-fi. Orders ship within 5–7 business days unless otherwise stated.</p>
+      <p>Custom commissions include two rounds of revisions; additional adjustments may incur fees. Digital files are for personal use unless we agree on commercial terms in writing.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-returns" role="dialog" aria-modal="true" aria-labelledby="modal-returns-title">
+    <div class="modal__dialog">
+      <button class="modal__close" data-modal-close>
+        <span class="sr-only">Close</span>
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-close"></use></svg>
+      </button>
+      <h2 id="modal-returns-title">Returns (Handmade)</h2>
+      <p>Because each piece is handmade and often limited, we can only accept returns for items damaged in transit. Please contact us within 7 days of delivery with photos.</p>
+      <p>We’ll work with you on replacements or partial refunds where possible. Custom commissions are final once approved.</p>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Thanks! We’ll reply in 24–48h.</div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
