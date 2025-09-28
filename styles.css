@@ -4,8 +4,11 @@
   --red: #D22B2B;
   --red-700: #A41111;
   --spooky: linear-gradient(180deg, #0b0b0b 0%, rgba(242, 239, 230, 0.08) 45%, #1b1b1f 100%);
-  --max-width: 1200px;
+  --max-width: 1040px;
   --transition: 0.25s ease;
+  --section-spacing: clamp(2rem, 6vw, 3.5rem);
+  --main-spacing-top: clamp(2.5rem, 7vw, 4.5rem);
+  --main-spacing-bottom: clamp(3.5rem, 9vw, 5.5rem);
 }
 
 * {
@@ -157,7 +160,7 @@ a:focus-visible,
 }
 
 .container {
-  width: min(100% - 2rem, var(--max-width));
+  width: min(100% - 2.5rem, var(--max-width));
   margin-inline: auto;
 }
 
@@ -287,11 +290,11 @@ a:focus-visible,
 }
 
 main {
-  padding-block: 3rem 6rem;
+  padding-block: var(--main-spacing-top) var(--main-spacing-bottom);
 }
 
 .section {
-  padding-block: 3rem;
+  padding-block: var(--section-spacing);
   border-bottom: 1px solid rgba(242, 239, 230, 0.08);
 }
 
@@ -314,7 +317,7 @@ main {
 
 .hero {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: calc(var(--section-spacing) + 1rem);
 }
 
 .hero__title {
@@ -644,6 +647,22 @@ main {
 @media (min-width: 600px) {
   .hero__buttons {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --section-spacing: 2rem;
+    --main-spacing-top: 2rem;
+    --main-spacing-bottom: 3.5rem;
+  }
+
+  .container {
+    width: min(100% - 1.5rem, var(--max-width));
+  }
+
+  .hero {
+    padding-top: calc(var(--section-spacing) + 0.5rem);
   }
 }
 
