@@ -167,7 +167,7 @@ a:focus-visible,
 }
 
 main {
-  margin-top: calc(var(--main-spacing-top) * 1.2);
+  margin-top: var(--main-spacing-top);
   margin-bottom: calc(var(--main-spacing-bottom) * 1.2);
 }
 
@@ -200,6 +200,10 @@ main {
   gap: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.logo span {
+  line-height: 1.1;
 }
 
 .logo__mark {
@@ -320,7 +324,7 @@ main {
 
 .hero {
   text-align: center;
-  padding-top: calc(var(--section-spacing) + 1rem);
+  padding-top: calc(var(--section-spacing) + 0.75rem);
 }
 
 .hero__title {
@@ -675,11 +679,15 @@ main {
   }
 
   .container {
-    width: min(100% - 1.5rem, var(--max-width));
+    width: min(100% - 2.25rem, var(--max-width));
+  }
+
+  main {
+    margin-top: calc(var(--main-spacing-top) * 0.75);
   }
 
   .hero {
-    padding-top: calc(var(--section-spacing) + 0.5rem);
+    padding-top: calc(var(--section-spacing) + 0.25rem);
   }
 }
 
