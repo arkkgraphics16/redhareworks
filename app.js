@@ -151,22 +151,6 @@ function setupForm() {
   });
 }
 
-function setupStickyCTA() {
-  const sticky = document.querySelector("[data-sticky-cta]");
-  if (!sticky) return;
-
-  const updateVisibility = () => {
-    if (window.innerWidth >= 768) {
-      sticky.style.position = "fixed";
-    } else {
-      sticky.style.position = "fixed";
-    }
-  };
-
-  updateVisibility();
-  window.addEventListener("resize", updateVisibility);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   applyLinks();
   setupReturnButtons();
@@ -174,5 +158,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setupHeaderShadow();
   setupModals();
   setupForm();
-  setupStickyCTA();
 });

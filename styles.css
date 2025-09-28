@@ -3,7 +3,7 @@
   --bone: #F2EFE6;
   --red: #D22B2B;
   --red-700: #A41111;
-  --spooky: linear-gradient(180deg, #0B0B0B 0%, #14080B 45%, #24080A 100%);
+  --spooky: linear-gradient(180deg, #0b0b0b 0%, rgba(242, 239, 230, 0.08) 45%, #1b1b1f 100%);
   --max-width: 1200px;
   --transition: 0.25s ease;
 }
@@ -89,9 +89,22 @@ a:focus-visible,
   color: var(--bone);
 }
 
+.btn--primary .icon--primary {
+  color: currentColor;
+}
+
 .btn--primary:hover,
 .btn--primary:focus-visible {
   background: var(--red-700);
+}
+
+.btn--primary:active {
+  background: var(--bone);
+  color: var(--black);
+}
+
+.btn--primary:active .icon--primary {
+  color: var(--black);
 }
 
 .btn--secondary {
@@ -221,6 +234,10 @@ a:focus-visible,
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.header__actions .btn--primary {
+  white-space: nowrap;
 }
 
 .hamburger {
@@ -605,16 +622,19 @@ main {
   margin-block: 2rem;
 }
 
-.sticky-cta {
-  position: fixed;
-  right: 1rem;
-  bottom: 1.5rem;
-  z-index: 80;
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.sticky-cta__button {
-  padding-inline: 1.75rem;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+.contact-layout {
+  display: grid;
+  gap: 3rem;
+}
+
+.contact-layout__panel {
+  background: transparent;
 }
 
 .lock-scroll {
@@ -664,27 +684,28 @@ main {
     justify-content: space-between;
     text-align: left;
   }
-
-  .sticky-cta {
-    top: 40%;
-    bottom: auto;
+  
+  .contact-main {
+    gap: 4rem;
   }
 }
 
 @media (min-width: 900px) {
-  .page--contact main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+  .contact-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
   }
 
-  .page--contact main .section {
-    border-bottom: none;
+  .contact-layout__panel {
     padding-block: 0;
+    border-bottom: none;
   }
+}
 
-  .page--contact main {
-    padding-block: 4rem;
+@media (max-width: 480px) {
+  .header__actions .btn--primary {
+    padding-inline: 1rem;
+    font-size: 0.95rem;
   }
 }
 
