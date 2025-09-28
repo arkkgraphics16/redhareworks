@@ -103,11 +103,11 @@ a:focus-visible,
 
 .btn--primary:active {
   background: var(--bone);
-  color: var(--red);
+  color: black;
 }
 
 .btn--primary:active .icon--primary {
-  color: var(--red);
+  color: black;
 }
 
 .btn--secondary {
@@ -168,7 +168,7 @@ a:focus-visible,
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(11, 11, 11, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(242, 239, 230, 0.12);
   transition: box-shadow var(--transition), border-color var(--transition);
@@ -201,7 +201,6 @@ a:focus-visible,
   border-radius: 12px;
   object-fit: cover;
   display: block;
-  border: 1px solid rgba(210, 43, 43, 0.4);
 }
 
 .nav {
@@ -291,7 +290,6 @@ a:focus-visible,
 }
 
 .section {
-  padding-block: var(--section-spacing);
   border-bottom: 1px solid rgba(242, 239, 230, 0.08);
 }
 
