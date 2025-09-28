@@ -3,7 +3,7 @@
   --bone: #F2EFE6;
   --red: #D22B2B;
   --red-700: #A41111;
-  --header-bg: #0B0B0B;
+  --header-bg: #000000;
   --spooky: linear-gradient(180deg, #0b0b0b 0%, rgba(242, 239, 230, 0.08) 45%, #1b1b1f 100%);
   --max-width: 1040px;
   --transition: 0.25s ease;
@@ -99,16 +99,17 @@ a:focus-visible,
 
 .btn--primary:hover,
 .btn--primary:focus-visible {
-  background: var(--red-700);
+  background: var(--black);
+  color: var(--bone);
 }
 
 .btn--primary:active {
-  background: var(--red-700);
-  color: var(--bone);
+  background: var(--bone);
+  color: var(--black);
 }
 
 .btn--primary:active .icon--primary {
-  color: var(--bone);
+  color: var(--black);
 }
 
 .btn--secondary {
@@ -125,7 +126,7 @@ a:focus-visible,
 
 .btn--return {
   border-radius: 999px;
-  padding-inline: 1.25rem;
+  padding-inline: 1rem;
   font-weight: 600;
   background: rgba(210, 43, 43, 0.12);
   border: 1px solid rgba(210, 43, 43, 0.6);
@@ -292,6 +293,7 @@ a:focus-visible,
 
 .section {
   border-bottom: 1px solid rgba(242, 239, 230, 0.08);
+  padding-block: var(--section-spacing);
 }
 
 .section:last-of-type {
@@ -363,7 +365,7 @@ a:focus-visible,
 
 .grid-3 {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   grid-template-columns: 1fr;
 }
 
@@ -422,7 +424,7 @@ a:focus-visible,
 
 .footer {
   border-top: 1px solid rgba(242, 239, 230, 0.08);
-  padding-block: 0.5rem;
+  padding-block: var(--section-spacing);
 }
 
 .footer__content {
@@ -551,7 +553,7 @@ a:focus-visible,
 
 .works__list {
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .work {
@@ -571,7 +573,7 @@ a:focus-visible,
 
 .quick-links {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .quick-link {
@@ -618,7 +620,6 @@ a:focus-visible,
 }
 
 .return-wrapper {
-  margin-block: 0.5rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -645,6 +646,18 @@ a:focus-visible,
 @media (min-width: 600px) {
   .hero__buttons {
     flex-direction: row;
+  }
+
+  .grid-3 {
+    gap: 2.25rem;
+  }
+
+  .quick-links {
+    gap: 2rem;
+  }
+
+  .works__list {
+    gap: 3rem;
   }
 }
 
@@ -684,6 +697,7 @@ a:focus-visible,
 
   .grid-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
   }
 
   .footer__links {
