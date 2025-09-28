@@ -162,8 +162,14 @@ a:focus-visible,
 }
 
 .container {
-  width: min(100% - 2.5rem, var(--max-width));
+  width: min(calc(100% - 2.5rem), var(--max-width));
   margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(calc(100% - 15vw), var(--max-width));
+  }
 }
 
 main {
