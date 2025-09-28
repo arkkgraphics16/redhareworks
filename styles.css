@@ -3,6 +3,7 @@
   --bone: #F2EFE6;
   --red: #D22B2B;
   --red-700: #A41111;
+  --header-bg: #0B0B0B;
   --spooky: linear-gradient(180deg, #0b0b0b 0%, rgba(242, 239, 230, 0.08) 45%, #1b1b1f 100%);
   --max-width: 1040px;
   --transition: 0.25s ease;
@@ -102,12 +103,12 @@ a:focus-visible,
 }
 
 .btn--primary:active {
-  background: var(--bone);
-  color: black;
+  background: var(--red-700);
+  color: var(--bone);
 }
 
 .btn--primary:active .icon--primary {
-  color: black;
+  color: var(--bone);
 }
 
 .btn--secondary {
@@ -168,7 +169,7 @@ a:focus-visible,
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(242, 239, 230, 0.12);
   transition: box-shadow var(--transition), border-color var(--transition);
@@ -618,6 +619,8 @@ a:focus-visible,
 
 .return-wrapper {
   margin-block: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .contact-main {
