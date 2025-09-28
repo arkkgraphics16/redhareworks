@@ -289,10 +289,6 @@ a:focus-visible,
   border-top: 1px solid rgba(242, 239, 230, 0.12);
 }
 
-main {
-  padding-block: var(--main-spacing-top) var(--main-spacing-bottom);
-}
-
 .section {
   padding-block: var(--section-spacing);
   border-bottom: 1px solid rgba(242, 239, 230, 0.08);
@@ -426,7 +422,7 @@ main {
 
 .footer {
   border-top: 1px solid rgba(242, 239, 230, 0.08);
-  padding-block: 3rem;
+  padding-block: 0.5rem;
 }
 
 .footer__content {
