@@ -166,6 +166,11 @@ a:focus-visible,
   margin-inline: auto;
 }
 
+main {
+  margin-top: calc(var(--main-spacing-top) * 1.2);
+  margin-bottom: calc(var(--main-spacing-bottom) * 1.2);
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -293,7 +298,7 @@ a:focus-visible,
 
 .section {
   border-bottom: 1px solid rgba(242, 239, 230, 0.08);
-  padding-block: var(--section-spacing);
+  padding-block: calc(var(--section-spacing) * 0.8);
 }
 
 .section:last-of-type {
@@ -622,6 +627,7 @@ a:focus-visible,
 .return-wrapper {
   display: flex;
   justify-content: flex-start;
+  margin-top: calc(var(--main-spacing-top) * 0.5);
 }
 
 .contact-main {
