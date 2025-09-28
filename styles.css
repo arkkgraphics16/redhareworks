@@ -199,7 +199,8 @@ a:focus-visible,
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: rgba(210, 43, 43, 0.2);
+  object-fit: cover;
+  display: block;
   border: 1px solid rgba(210, 43, 43, 0.4);
 }
 
