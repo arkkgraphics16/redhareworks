@@ -103,11 +103,11 @@ a:focus-visible,
 
 .btn--primary:active {
   background: var(--bone);
-  color: var(--black);
+  color: var(--red);
 }
 
 .btn--primary:active .icon--primary {
-  color: var(--black);
+  color: var(--red);
 }
 
 .btn--secondary {
@@ -553,12 +553,12 @@ main {
   outline-offset: 2px;
 }
 
-.services__list {
+.works__list {
   display: grid;
   gap: 2rem;
 }
 
-.service {
+.work {
   display: grid;
   gap: 1rem;
   background: rgba(20, 8, 11, 0.65);
@@ -567,7 +567,7 @@ main {
   padding: 2rem;
 }
 
-.service__actions {
+.work__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -622,7 +622,7 @@ main {
 }
 
 .return-wrapper {
-  margin-block: 2rem;
+  margin-block: 0.5rem;
 }
 
 .contact-main {
